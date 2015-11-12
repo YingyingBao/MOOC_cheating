@@ -114,7 +114,7 @@ def func_time_delta_CH(CHrow,CMrow):
 		else:
 			time_CH=datetime.strptime(CHrow[i],date_format)
 			time_CM=datetime.strptime(CMrow[i],date_format)
-			time_delta=(time_CH-time_CM).total_seconds()
+			time_delta=(time_CM-time_CH).total_seconds()
 			tempList.append(time_delta)
 			flag=1
 	if flag==1:
